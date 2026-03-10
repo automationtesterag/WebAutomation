@@ -6,6 +6,8 @@ The framework allows tests to be executed dynamically by defining test cases and
 
 It follows a **modular architecture** that separates test definitions, test data, page actions, and framework utilities.
 
+<img width="774" height="517" alt="Screenshot 2026-03-10 at 11 45 13 PM" src="https://github.com/user-attachments/assets/ab665a8e-4491-4248-9a67-cf908aa3907b" />
+
 ---
 
 # Framework Components
