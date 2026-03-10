@@ -163,3 +163,116 @@ runTags=smoke
 ```
 
 ---
+# Prerequisites
+
+Ensure the following tools are installed.
+
+### Java
+
+```
+java -version
+```
+
+### Maven
+
+```
+mvn -version
+```
+
+### Git
+
+```
+git --version
+```
+
+---
+
+# Clone the Repository
+
+```
+git clone <your-repository-url>
+```
+
+Navigate into the project:
+
+```
+cd WebAutomation
+```
+
+---
+
+# Install Dependencies
+
+Download project dependencies using Maven.
+
+```
+mvn clean install
+```
+
+---
+
+# Execute the Framework (CLI)
+
+The framework runs through the **TestRunner class**.
+
+Run using:
+
+```
+mvn clean test-compile exec:java -Dexec.mainClass="otherTest.TestRunner" -Dexec.classpathScope=test
+```
+
+This command will:
+
+1. Clean previous builds
+2. Compile test classes
+3. Execute `TestRunner`
+4. Run tests defined in `tests.yaml`
+
+---
+
+# Reports
+
+Reports are generated after execution.
+
+### TestNG Reports
+
+```
+test-output/
+```
+
+### Extent Reports
+
+```
+ExtentReports/
+```
+
+Reports include:
+
+* execution status
+* logs
+* screenshots
+* test metrics
+
+---
+
+# Dependencies
+
+Main libraries used in this framework:
+
+* Selenium WebDriver
+* TestNG
+* Apache POI
+* SnakeYAML
+* Extent Reports
+
+---
+
+# CI/CD Ready
+
+The framework is designed to run easily in CI/CD pipelines such as:
+
+* GitHub Actions
+* GitLab CI
+* Jenkins
+
+Execution can be triggered using the same Maven command.
