@@ -190,7 +190,7 @@ git --version
 # Clone the Repository
 
 ```
-git clone <your-repository-url>
+git clone https://github.com/automationtesterag/WebAutomation.git
 ```
 
 Navigate into the project:
